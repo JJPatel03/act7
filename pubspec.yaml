@@ -52,6 +52,10 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  assets:
+    - assets/36773-6-angry-emoji-photos.jpeg
+    - assets/36885-5-sad-emoji-photos.jpeg
+    - assets/65057-emoticon-signal-smiley-thumb-emoji-free-frame.jpeg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

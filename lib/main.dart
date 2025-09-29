@@ -16,17 +16,17 @@ class MoodModel with ChangeNotifier {
   String get currentMood => _currentMood;
 
   void setHappy() {
-    _currentMood = '😊 use your own img here ';
+    _currentMood = 'assets/65057-emoticon-signal-smiley-thumb-emoji-free-frame.jpeg';
     notifyListeners();
   }
 
   void setSad() {
-    _currentMood = '😢 use your own img here ';
+    _currentMood = 'assets/36885-5-sad-emoji-photos.jpeg';
     notifyListeners();
   }
 
   void setAngry() {
-    _currentMood = '🎉 use your own img here ';
+    _currentMood = 'assets/36773-6-angry-emoji-photos.jpeg';
     notifyListeners();
   }
 }
@@ -91,19 +91,19 @@ class MoodButtons extends StatelessWidget {
           onPressed: () {
             Provider.of<MoodModel>(context, listen: false).setHappy();
           },
-          child: Text('Happy 😊 use your own img here '),
+          child: Text('assets/65057-emoticon-signal-smiley-thumb-emoji-free-frame.jpeg'),
         ),
         ElevatedButton(
           onPressed: () {
             Provider.of<MoodModel>(context, listen: false).setSad();
           },
-          child: Text('Sad 😢 use your own img here '),
+          child: Text('assets/36885-5-sad-emoji-photos.jpeg'),
         ),
         ElevatedButton(
           onPressed: () {
             Provider.of<MoodModel>(context, listen: false).setAngry();
           },
-          child: Text('Excited 🎉 use your own img here '),
+          child: Text('assets/36773-6-angry-emoji-photos.jpeg'),
         ),
       ],
     );
